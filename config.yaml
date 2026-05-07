@@ -1,0 +1,27 @@
+# Training Configuration
+image_size: 256
+batch_size: 8
+epochs: 20
+learning_rate: 0.0001
+optimizer: adam
+encoder: resnet34
+random_seed: 42
+
+# Loss
+loss_function: DiceLoss + CrossEntropyLoss
+class_weights: [0.2, 0.8]
+
+# Augmentations
+augmentations:
+  - HorizontalFlip
+  - VerticalFlip
+  - RandomRotate90
+
+# Paths
+train_pre: data/train/pre-event/
+train_post: data/train/post-event/
+train_target: data/train/target/
+val_pre: data/val/pre-event/
+val_post: data/val/post-event/
+val_target: data/val/target/
+checkpoint_path: best_model.pth

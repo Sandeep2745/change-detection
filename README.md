@@ -23,7 +23,7 @@ python train.py
 python eval.py --data_path /path/to/test --weights /path/to/best_model.pth
 
 ## Model Weights
-Download from Google Drive: YOUR_GOOGLE_DRIVE_LINK
+Download from Google Drive: https://drive.google.com/file/d/1YR9du4oqcXO0CF-OVl3OPfZN3KOalV4l/view?usp=drivesdk
 
 ## Results
 ### Validation Split
